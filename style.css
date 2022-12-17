@@ -1,0 +1,488 @@
+@import url(../css/font.css);
+
+
+
+:root{
+
+
+--Abel:"Abel",cursive ;
+
+--Anton:"Anton",cursive;
+
+--Josefin:"Josefin",cursive;
+
+--Lexend:"Lexend",cursive;
+
+}
+
+body{
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+h1{
+    font-family: var(--Lexend);
+}
+
+
+h2{
+    font-family: var(--Abel);
+}
+
+h3{
+    font-family: var(--Abel);
+}
+
+
+p{
+    font-family: var(--Abel);
+}
+
+.heading{
+
+    font-family: var(--Lexend);
+    font-size: 1.8rem;
+    font-weight: bold;
+
+}
+
+button.btn{
+
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    background-color: yellowgreen;
+    font-family: var(--Lexend);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+html,body{
+    margin: 0;
+    box-sizing:border-box;
+    overflow-x: hidden;
+
+}
+
+
+
+a{
+    text-decoration: none;
+ }
+
+.flex-row{
+     display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+.nav{
+    background-color: white;
+    padding: 0.2em;
+    height:0em ;
+    min-height:  10vh; 
+    overflow :hidden;
+}
+
+.nav.nav-bar a{
+
+    font-size:1.6rem ;
+    padding:1rem 0 ;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+    flex-wrap:wrap ;
+}
+
+
+/* .nav.toggle-collapes{
+
+
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav.toggle-collapes.toggle-icon{
+   display: flex;
+   justify-content: flex-end;
+} */
+
+
+#togg{
+    position: absolute;
+    top: 0%;
+    width: 60%;
+    cursor: pointer;
+    display: none;
+    display: flex ;
+    justify-content: flex-end;
+    padding-top:  1.6em;
+    visibility: hidden;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+
+
+
+
+
+
+
+
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+ .nav-link{
+ 
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.nav .nav-brand a{
+font-size: 1.6rem;
+padding: 1rem 1rem;
+display: block;
+font-family: var(--Lexend);
+
+}
+
+.nav .social{
+    padding: 1.4rem 1rem;
+}
+
+.nav .social i{
+    padding: 0 0.2rem;
+}
+
+
+.social i:hover{
+    color: #a1c4cf;
+}
+
+
+@media only screen and (max-width:690px)
+{
+    .nav-menu,.nav-items{
+        flex-direction: column;
+    }
+    
+    #togg{
+       visibility: visible;
+    }
+        
+     
+
+}
+
+
+/* main content */
+
+
+/* site title */
+.site-title{
+    background: url(../assets/epicurrence-p6mPhlNCfMw-unsplash.jpg);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+#img2{
+
+    margin-left: 2rem;
+    margin-top: 3rem;
+    background-size: cover;
+    height: 60vh;
+    width: 100vh;
+    
+    
+    
+
+}
+
+
+#img3{
+    
+    background-size: cover;
+    height: 60vh;
+    width: 100vh;
+}
+
+#img3:hover{
+    transform: scale(1.1);
+    transition: 00.5s;
+
+}
+
+
+.site-background{
+
+padding-top: 8rem;
+text-align: center;
+color:white;
+
+font-size: 3rem;
+
+}
+.site-background h3{
+    color: yellowgreen;
+}
+
+
+.site-title h1,h3{
+
+    margin: 0.3em;;
+}
+
+
+.site-title.btn{
+
+
+    margin: 1.5re,;
+    
+}
+
+.btn:hover{
+background-color: transparent;
+border: 1px solid white;
+color: white;
+
+}
+
+
+
+
+/* site title */
+
+.container{
+    width: 70%;
+}
+ 
+
+.post-info{
+    margin-left: 8rem;
+    margin-top: -1rem;
+    padding: 1rem 1rem;
+    background-color: #7BC6CC;
+    height: 2vh;
+    
+    width: 60vh;
+    overflow: hidden;
+    border-radius: 3rem;
+    position: absolute;
+    
+}
+
+figure{
+    overflow: hidden;
+}
+
+
+#img2:hover{
+    
+    transform: scale(1.1);
+    
+    
+
+    
+    transition:0.5s;
+}
+
+.post-title{
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+
+.rdm{
+    background-color: yellowgreen;
+    border: 1px solid black;
+    border-radius: 3rem;
+    padding: 1em 1em;
+    font-family: var(--Lexend);
+
+}
+
+.rdm:hover
+{
+    background-color: transparent;
+    color: black;
+    
+
+}
+
+
+.hrs{
+    margin-top: 2rem;
+}
+
+
+.sideflx{
+
+    margin-left: 60rem;
+    transform: translateY(-78rem);
+    
+}
+
+.list-items{
+    font-family: var(--Lexend);
+
+    padding: 1rem 2rem;
+    margin: 0.8rem;
+    background-color: yellowgreen;
+    width: 55%;
+    border: 1px solid black;
+    border-radius: 3rem;
+} 
+
+
+.list-items:hover{
+    background-color: transparent;
+    transform: scale(1.2);
+    transition: 0.35s;
+    
+}
+
+#cat{
+    font-family: var(--Abel);
+    font-size: 3rem;
+    background-color: gray;
+    width: 35%;
+    border-radius: 2.3rem;
+
+}
+
+.popular{
+    margin-top: 7rem;
+}
+
+.post{
+    margin-top: 3rem;
+}
+
+.post-img{
+    background-size: cover;
+    height: 30vh;
+    width: 50vh;
+    border: 4px solid wheat;
+    
+    overflow: hidden;
+
+}
+.post-img:hover{
+
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+}
+
+/* main content */
+
+/* footer */
+.footer-container{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    padding: 3rem 6rem;
+    flex-grow: 1;
+}
+.fb{
+    
+    border: none;
+    padding-bottom: 0.2rem;
+    font-family: var(--Lexend);
+
+}
+
+.fb:hover{
+    background-color: paleturquoise;
+}
+ 
+.fl:hover{
+    color: white;
+}
+
+
+.aboutus{
+    margin-right: 5rem;
+}
+
+
+
+
+
+/* footer */
+@media only screen and (max-width:1000px){
+
+     #img2{
+      height: 30vh;
+      width: 50vh;
+      margin-left: 1rem;
+     }
+
+     #img2bar{
+         margin-left: 3.6rem;
+     }
+     #img3{
+      height: 30vh;
+      width: 50vh;
+     }
+     .post-info{
+         width: 20%;
+         margin-left: 3rem;
+         
+     }
+
+     .category{
+         transform: translateX(-50rem);
+         margin-top: 83rem;
+         
+     }
+     .list-items{
+         width: 7rem;
+     }
+     
+     .popular{
+         transform: translateX(-50rem);
+         
+     }
+     .post-img{
+         height: 20vh;
+         width: 40vh;
+     }
+     .pophead{
+         font-size: 1.3rem;
+         display: none;
+         
+         
+    
+         
+
+     }
+}
